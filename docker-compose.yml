@@ -3,5 +3,7 @@ services:
   bbdcapp:
     build: .
     image: bbdc-bot:latest
+    volumes: 
+      - .:/code/
     environment:
-      - CONFIG_PATH=$CONFIG_PATH
+      - CONFIG_PATH=config/et.yaml
